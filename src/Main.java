@@ -13,6 +13,12 @@ public class Main {
 
         // Giải quyết bài toán bằng thuật toán tham lam
         int result = Knapsack.greedyKnapsack(capacity, items);
-        System.out.println("Giá trị tối đa có thể có trong túi là: " + result);
+        System.out.println("Với thuật toán tham lam thì giá trị tối đa có thể có trong túi là: " + result);
+        int n = items.size();
+        // In ra giá trị tối đa có thể mang trong túi
+        System.out.println("Với thuật toán quy hoạch động thì giá trị tối đa có thể có trong túi là: " + Knapsack.dynamicKnapsack(capacity, items, n));
+
+        // Truy vết và in ra các vật phẩm đã chọn
+        Knapsack.findItems(capacity, items, n);
     }
     }

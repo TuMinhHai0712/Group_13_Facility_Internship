@@ -9,6 +9,22 @@ public class Item {
         this.weight = weight;
     }
 
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
     // Tính tỷ lệ giá trị/trọng lượng
     public double getValuePerWeight() {
         return (double) value / weight;
